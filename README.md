@@ -18,5 +18,5 @@
 * curl -u name1:password1 localhost，这时候就可以访问了
 
 ### 参考：
-* [nginx auth basic]()
-* [openssl passwd](://www.openssl.org/docs/apps/passwd.html)
+* [nginx auth basic](http://nginx.org/en/docs/http/ngx_http_auth_basic_module.html)
+* [openssl passwd](http://www.openssl.org/docs/apps/passwd.html)
