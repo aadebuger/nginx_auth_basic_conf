@@ -6,6 +6,7 @@
 * 将html目录（也就是缺省的www）中的index.html做一个修改，让其与原版不同
 * 增加基本认证配置
     * 生成一个passwd文件，加上两个用户名密码，密码是用openssl passwd算个hash
+    * 口令长度超过8，用-1，也就是MD5，具体可见最后参考列表
     * 按[这里](http://nginx.org/en/docs/http/ngx_http_auth_basic_module.html)进行配置，其实上一步也是按这个链接配置的
 * 具体修改完的结果看这个demo
 
