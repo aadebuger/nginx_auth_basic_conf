@@ -5,8 +5,8 @@
 * 然后把/etc/nginx中的nginx.conf conf.d/ 和缺省的www目录copy过来，并修改路径
 * 将html目录（也就是缺省的www）中的index.html做一个修改，让其与原版不同
 * 增加基本认证配置
-    * 生成一个passwd文件，加上两个用户名密码，密码用openssl passwd生成，这里的注释纯为提示加密的密码是啥，生产环境可以去掉注释，其实也是防君子不防小人
-    * 按[这里](http://nginx.org/en/docs/http/ngx_http_auth_basic_module.html)，其实上一步也是按这个链接配置的
+    * 生成一个passwd文件，加上两个用户名密码，密码是用openssl passwd算个hash
+    * 按[这里](http://nginx.org/en/docs/http/ngx_http_auth_basic_module.html)进行配置，其实上一步也是按这个链接配置的
 * 具体修改完的结果看这个demo
 
 ### nginx启动
@@ -17,4 +17,6 @@
 * curl localhost，这时候是401
 * curl -u name1:password1 localhost，这时候就可以访问了
 
-
+### 参考：
+* [nginx auth basic]()
+* [openssl passwd](://www.openssl.org/docs/apps/passwd.html)
