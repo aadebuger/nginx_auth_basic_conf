@@ -20,3 +20,4 @@
 ### 参考：
 * [nginx auth basic](http://nginx.org/en/docs/http/ngx_http_auth_basic_module.html)
 * [openssl passwd](http://www.openssl.org/docs/apps/passwd.html)
+* [客户端使用](http://www.cnblogs.com/tankxiao/archive/2012/09/26/2695955.html)
